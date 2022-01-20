@@ -1,0 +1,25 @@
+{
+    "homepage": "https://github.com/DimitarPetrov/stegify",
+    "version": "1.2",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win64.exe"
+        },
+        "32bit": {
+            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win32.exe"
+        }
+    },
+    "bin": "stegify.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DimitarPetrov/stegify/releases/download/v$version/stegify_win64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/DimitarPetrov/stegify/releases/download/v$version/stegify_win32.exe"
+            }
+        }
+    }
+}
