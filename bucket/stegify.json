@@ -4,10 +4,12 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win64.exe"
+            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win64.exe",
+            "hash": "73DDE6FB76ED4AD7D5347FEC38DB5C7C2300B8E54D7BA5C098CB9E47FB702B4E"
         },
         "32bit": {
-            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win32.exe"
+            "url": "https://github.com/DimitarPetrov/stegify/releases/download/v1.2/stegify_win32.exe",
+            "hash": "3249DF622C76195AAE0FB7A309300D537BCDA8FADB74FF80F2950FC0EFBAA8CA"
         }
     },
     "bin": "stegify.exe",
