@@ -8,7 +8,7 @@
             "hash": "765069e8259d9acf4e5d0828d6e85870ecca23f998d48bfe37ddb0417fc52934"
         }
     },
-    "bin": "librewolf-portable.exe",
+    "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981",
         "regex": "\"direct\":\"https://gitlab.com/librewolf-community/browser/windows/uploads(?<hash>[a-z0-9]{32})/librewolf-([\\d\\.]+)\\.en-US\\.win64\\.zip\"",
