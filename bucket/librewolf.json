@@ -12,14 +12,17 @@
     "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981",
-        "regex": "\"direct\":\"https://gitlab.com/librewolf-community/browser/windows/uploads(?<hash>[a-z0-9]{32})/librewolf-([\\d\\.]+)\\.en-US\\.win64\\.zip\"",
+        "regex": "\"direct\":\"https://gitlab.com/librewolf-community/browser/windows/uploads(?<sha256>[a-z0-9]{32})/librewolf-([\\d\\.]+)\\.en-US\\.win64\\.zip\"",
         "replace": "${version}"
     },
     "persist": "LWProfiles",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$matchHash/librewolf-$version.en-US.win64.zip"
+                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$sha256/librewolf-$version.en-US.win64.zip"
+            },
+            "hash": {
+                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$sha256/sha256sums.txt"
             }
         },
         "extract_dir": "librewolf-$version"
