@@ -12,8 +12,7 @@
     "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981/releases",
-	"jsonpath": "$..assets.links..direct_asset_url",
-	"regex": "https://gitlab\\.com/librewolf-community/browser/windows/uploads/(?<sha256>[a-z0-9]{32})/librewolf-([\\d.]+)\\.en-US\\.win64-portable\\.zip",
+	"regex": "/uploads/(?<sha256>[a-z0-9]{32})/librewolf-([\\d.]+)\\.en-US\\.win64-portable\\.zip",
         "replace": "${version}"
     },
     "persist": "LWProfiles",
