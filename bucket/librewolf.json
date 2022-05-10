@@ -8,12 +8,10 @@
             "hash": "85f613536a63cc4ef888759a3cab1c455c9f38b43272f16cdfea7deb086be5bd"
         }
     },
-    "pre_intstall": [
-        "$lw_name = (Get-Item \"$dir\\librewolf-*\").FullName",
-        "Move-Item \"$lw_name\\*\" \"$dir\"",
-        "Remove-Item \"$lw_name\""
+    "bin": [
+        "LibreWolf-Portable.exe",
+        "librewolf*\\LibreWolf-Portable.exe"
     ],
-    "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981/releases",
         "regex": "/uploads/(?<sha256>[a-z0-9]{32})/librewolf-([\\d.]+-?[\\d]+?)\\.en-US\\.win64-portable\\.zip",
