@@ -8,7 +8,6 @@
             "hash": "85f613536a63cc4ef888759a3cab1c455c9f38b43272f16cdfea7deb086be5bd"
         }
     },
-    "extract_dir": "librewolf-100.0-3",
     "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981/releases",
@@ -24,7 +23,6 @@
             "hash": {
                 "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$sha256/sha256sums.txt"
             }
-        },
-        "extract_dir": "librewolf-$version"
+        }
     }
 }
