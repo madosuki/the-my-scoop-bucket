@@ -1,18 +1,18 @@
 {
     "homepage": "https://gitlab.com/librewolf-community",
-    "version": "98.0",
+    "version": "100.0-3",
     "license": "MPL 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/90d15e27ba473d2beb0da8b9bf9033d7/librewolf-98.0.en-US.win64-portable.zip",
-            "hash": "765069e8259d9acf4e5d0828d6e85870ecca23f998d48bfe37ddb0417fc52934"
+            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/90d15e27ba473d2beb0da8b9bf9033d7/librewolf-100.0-3.en-US.win64-portable.zip",
+            "hash": "85f613536a63cc4ef888759a3cab1c455c9f38b43272f16cdfea7deb086be5bd"
         }
     },
-    "extract_dir": "librewolf-98.0",
+    "extract_dir": "librewolf-100.0-3",
     "bin": "LibreWolf-Portable.exe",
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981/releases",
-	"regex": "/uploads/(?<sha256>[a-z0-9]{32})/librewolf-([\\d.]+)\\.en-US\\.win64-portable\\.zip",
+	"regex": "/uploads/(?<sha256>[a-z0-9]{32})/librewolf-([\\d.]+-?[\\d]+?)\\.en-US\\.win64-portable\\.zip",
         "replace": "${version}"
     },
     "persist": "LWProfiles",
