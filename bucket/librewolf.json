@@ -1,11 +1,11 @@
 {
     "homepage": "https://gitlab.com/librewolf-community",
-    "version": "100.0-3",
+    "version": "100.0.2-1",
     "license": "MPL 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/9ce209768426da25367e6c2d0580e606/librewolf-100.0-3.en-US.win64-portable.zip",
-            "hash": "85f613536a63cc4ef888759a3cab1c455c9f38b43272f16cdfea7deb086be5bd"
+            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/209e439eaf35a470b31b51e315346813/librewolf-100.0.2-1.en-US.win64-portable.zip",
+            "hash": "57ad103696424e364bd99fb49fcef76a9dacec6872848e9ae423b8333f56c8d6"
         }
     },
     "bin": [
