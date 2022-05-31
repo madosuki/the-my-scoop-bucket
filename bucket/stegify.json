@@ -13,7 +13,7 @@
         }
     },
     "bin": "stegify.exe",
-    "checkver": "github.com",
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
