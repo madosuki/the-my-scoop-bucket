@@ -4,7 +4,7 @@
     "license": "MPL 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/03399acff4948bf47b45ef92d54874dc/librewolf-100.0.2-1.en-US.win64-portable.zip",
+            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/03399acff4948bf47b45ef92d54874dc/librewolf-101.0-2.en-US.win64-portable.zip",
             "hash": "531616db7d799e86dffce5ed2a0a46ba53c15b2c0ec4ff622556a4e251b9c125"
         }
     },
