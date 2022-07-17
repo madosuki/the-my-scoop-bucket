@@ -1,11 +1,11 @@
 {
     "homepage": "https://gitlab.com/librewolf-community",
-    "version": "101.0.1-1",
+    "version": "102.0.1-1",
     "license": "MPL 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/20779ab06395003b7974b2b83c3caea4/librewolf-101.0.1-1.en-US.win64-portable.zip",
-            "hash": "ec59ab208b6e9ea43cc8a11444fcf6af6751e90f583658393b47c7e7a7ee7e1c"
+            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/721e7e647b4a2853e7a11e91f409be96/librewolf-102.0.1-1.en-US.win64-portable.zip",
+            "hash": "03f0b55d869911e2c6ccb8bd1c129e8a31988657f691c10b7a5a27e46fecece2"
         }
     },
     "bin": [
@@ -16,17 +16,17 @@
     ],
     "checkver": {
         "url": "https://gitlab.com/api/v4/projects/13852981/releases",
-        "regex": "/uploads/(?<sha256>[a-z0-9]{32})/librewolf-(?<version>[\\d.]+-?[\\d]+?)\\.en-US\\.win64-portable\\.zip",
+        "regex": "/uploads/(?<randidzip>[a-z0-9]+)/librewolf-(?<version>[\\d.-]+)\\.en-US\\.win64-portable\\.zip.*?/uploads/(?<randidsha>[a-z0-9]+)/sha256sums\\.txt",
         "replace": "${version}"
     },
     "persist": "LWProfiles",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$sha256/librewolf-$version.en-US.win64-portable.zip"
+                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$matchRandidzip/librewolf-$version.en-US.win64-portable.zip"
             },
             "hash": {
-                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$sha256/sha256sums.txt"
+                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$matchRandidsha/sha256sums.txt"
             }
         }
     }
